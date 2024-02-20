@@ -1,0 +1,87 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.col{
+    padding: 0 20px;
+}
+.container {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* margin-left: -20px;
+    margin-right: -20px; */
+}
+/*------------
+ HEADER 
+ ------------*/
+header{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+}
+header .logo{
+    padding: 25px 20px;
+    padding-right: 80px;
+}
+header ul li{
+    display: flex;
+    padding-bottom: 15px;
+}
+header ul li img{
+    height: 30px;
+    padding-left: 25px;
+    padding-right: 6px;
+}
+header ul li{
+    color: #717171;
+
+}
+header ul li span{
+    line-height: 30px;
+}
+header h2{
+    color: #fff;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+header .playlist li{
+    padding-left: 25px;
+}
+header .playlist li span{
+    line-height: 62px;
+}
+
+header .playlist button{
+    font-size: 30px;
+    font-weight: 700;
+    border: none;
+    background-color: #A3A3A3;
+    padding: 4px 12px;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+main{
+    background-color: #141922;
+    
+    width: 85%;
+}

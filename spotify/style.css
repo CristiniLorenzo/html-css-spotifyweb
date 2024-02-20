@@ -11,10 +11,11 @@ img{
 }
 .container-app{
     height: calc(100vh - 80px);
-    display: flex;
-    
+    display: flex;  
 }
-
+.row{
+    display: flex;
+}
 /*------------
  HEADER 
  ------------*/
@@ -77,7 +78,7 @@ header .user .install{
 }
 header .user hr{
     margin: 15px 25px;
-    color: #717171;
+    border-color: #717171;
 }
 header .user .name{
     height: 32px;
@@ -100,6 +101,59 @@ header .user .profile span{
 .playlist{
     overflow-y: auto;
     flex-grow: 1;
+}
+.upgrade{
+    justify-content: flex-end;
+    background-color: rgba(8, 11, 18, 0.7);
+}
+.upgrade button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin: 25px 6px;   
+}
+.nav-album{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.nav-album ul{
+    display: flex;
+    list-style: none;
+}
+.nav-album ul li{
+    padding: 0 15px;
+}
+.nav-album ul li a{
+    text-decoration: none;
+    color: #808080;
+}
+.container{
+    margin: 30px 20px;
+}
+.container .music{
+    margin: 0 -10px;
+}
+.titoli{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.card{
+    width: calc(100% / 6);
+    margin: 10px;
+}
+
+.card h3{
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+.card p{
+    color:#A3A3A3;
+    text-align: center;
 }
 main{
     background-color: #141922;

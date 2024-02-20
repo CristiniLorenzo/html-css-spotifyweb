@@ -105,6 +105,10 @@ header .user .profile span{
 .upgrade{
     justify-content: flex-end;
     background-color: rgba(8, 11, 18, 0.7);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 .upgrade button{
     background-color: transparent;
@@ -134,12 +138,16 @@ header .user .profile span{
 .container{
     margin: 30px 20px;
 }
-.container .music{
-    margin: 0 -10px;
+.music{
+    margin: 10px -10px;
 }
 .titoli{
     color: #fff;
-    margin-bottom: 30px;
+    margin: 30px 0;
+    display: block;
+}
+.titoli p{
+    padding: 15px 0;
 }
 .card{
     width: calc(100% / 6);
@@ -158,4 +166,5 @@ header .user .profile span{
 main{
     background-color: #141922;
     flex-grow: 1;
+    overflow-y: auto;
 }

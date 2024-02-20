@@ -33,17 +33,14 @@ header .logo{
 header ul li{
     display: flex;
     padding-bottom: 15px;
+    color: #717171;
 }
-header ul li img{
+header .main-nav img{
     height: 30px;
     padding-left: 25px;
     padding-right: 6px;
 }
-header ul li{
-    color: #717171;
-
-}
-header ul li span{
+header .main-nav span{
     line-height: 30px;
 }
 header h2{
@@ -54,10 +51,13 @@ header h2{
 header .playlist li{
     padding-left: 25px;
 }
+header .playlist li a{
+    color: #717171;
+    text-decoration: none;
+}
 header .playlist li span{
     line-height: 62px;
 }
-
 header .playlist button{
     font-size: 30px;
     font-weight: 700;
@@ -67,6 +67,39 @@ header .playlist button{
     margin-right: 8px;
     margin-top: 10px;
     cursor: pointer;
+}
+header .user .install{
+    background-color: transparent;
+    color: #717171;
+    border: none;
+    margin-left: 25px;
+    cursor: pointer;
+}
+header .user hr{
+    margin: 15px 25px;
+    color: #717171;
+}
+header .user .name{
+    height: 32px;
+    width: 32px;
+    background-color: #808080;
+    border: none;
+    border-radius: 100%;
+    overflow: hidden;
+}
+header .user button img{
+    height: 30px;
+}
+header .user .profile{
+    padding-left: 25px;
+}
+header .user .profile span{
+    color: #fff;
+    line-height: 32px;
+}
+.playlist{
+    overflow-y: auto;
+    flex-grow: 1;
 }
 main{
     background-color: #141922;

@@ -259,19 +259,34 @@ footer .col img{
     align-items: center;
 }
 .bar .grey-line{
-    width: 100%;
+    width: 500px;
     height: 3px;
     border-radius: 2px;
     background-color: #717171;
 }
-/* .bar .white-line{
+.bar .white-line{
     width: 100px;
     height: 3px;
     border-radius: 2px;
     background-color: #fff;
-} */
+}
 .bar p{
     padding: 0 30px;
+}
+.volume-bar .grey-line{
+    width: 170px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #717171;
+}
+.volume-bar .white-line{
+    width: 75px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.console *{
+    padding: 0 16px;   
 }
 /*--------------
  HOVER
@@ -290,23 +305,33 @@ header .main-nav li:hover{
 .nav-album ul li a:hover{
     border-bottom: 3px solid #ADFF2F;
     transition: 0.2s;
-
 }
 .now-plaing .fa-heart:hover{
     color: darkred;
     font-size: 20px;
     cursor: pointer;
-
 }
 .now-plaing .fa-folder:hover{
     color: #fff;
     font-size: 20px;
     cursor: pointer;
-
 }
 .now-plaing p:hover , .now-plaing h4:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+.bar .grey-line:hover{
+    height: 5px;
+}
+.bar :hover .white-line{
+    height: 5px;
+}
+.player i:hover{
+   font-size: 18px;
+   cursor: pointer;
+}
+.player .fa-circle-play:hover{
+    font-size: 31px;
 }
 /*--------------
  RESPONSIVE
@@ -315,10 +340,31 @@ header .main-nav li:hover{
     .card{
         width: calc(100% / 4 - 20px);
     }
+    .bar .grey-line{
+        width: 500px;
+    }
+    .volume{
+        flex-direction: column;
+    }
+    .console{
+        padding-bottom: 15px;
+    }
 }
 @media screen and (max-width: 700px){
     .card{
         width: calc(100% / 2 - 20px);
+    }
+    .bar .grey-line{
+        width: 200px;
+    }
+    .save{
+        display: none;
+    }
+    .console .fa-display{
+        display: none;
+    }
+    .volume-bar .grey-line{
+        width: 110px;
     }
 }
 @media screen and (max-width: 600px){
@@ -356,6 +402,23 @@ header .main-nav li:hover{
         display: none;
     }
     .user .profile span{
+        display: none;
+    }
+    .bar p{
+        display: none;
+    }
+}
+@media screen and (max-width: 450px){
+    .song-title{
+        display: none;
+    }
+    .volume-bar .grey-line{
+        width: 60px;
+    }
+    .volume-bar .white-line{
+        width: 20px;
+    }
+    .console .fa-list{
         display: none;
     }
 }
